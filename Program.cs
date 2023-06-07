@@ -3,28 +3,24 @@ using System;
 namespace HelloWorld {
     class Program {
         static void Main(string[] args){
-            // an integer variable 
-            int age = 35;
-            Console.WriteLine(age);
+            // concatenating variables
+            string firstName = "John";
+            string lastName = "Doe";
+            string fullName = firstName + lastName;
+            Console.WriteLine(fullName);
 
-            // this is a constant variable (read-only)
-            const int birthYear = 2003;
+            string greeting = "Hello";
+            Console.WriteLine(greeting + fullName);
 
-            // a double variable
-            double amount = 55.60
-            Console.WriteLine(amount);
-
-            // a string variable 
-            string name = "john";
-            Console.WriteLine(name);
-
-            // a char variable 
-            char tag ='X';
-            Console.WriteLine(tag);
-
-            // a boolean variabla
-            bool isEnabled = true;
-            Console.WriteLine(isEnabled);
+            // declaring multiple variables & assigning the same value to multiple variables
+            int x = 5, y = 7, z = 9;
+            Console.WriteLine(x);
+            Console.WriteLine(y);
+            Console.WriteLine(z);
+            
+            int a, b, c;
+            a = b = c= 34;
+            Console.WriteLine(a + b + c);
         }
     }
 }
